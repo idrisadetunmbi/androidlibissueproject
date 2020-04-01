@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FragmentA_SearchInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:hint">fragment a search input hint</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="startIconDrawable">@drawable/ic_search_24</item>
+    </style>
+
+    <style name="FragmentB_Input_Description" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="childStyle">@style/FragmentB_InputChild_Description</item>
+    </style>
+
+    <style name="FragmentB_InputChild_Description" parent="Widget.AppCompat.EditText">
+        <item name="android:gravity">start|top</item>
+        <item name="android:minLines">5</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+</resources>
