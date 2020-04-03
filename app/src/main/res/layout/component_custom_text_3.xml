@@ -3,12 +3,15 @@
 
     <data>
 
+        <variable
+            name="style"
+            type="com.airbnb.paris.styles.Style" />
     </data>
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text"
+    <androidx.appcompat.widget.AppCompatTextView
+        parisStyle="@{style}"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-    </com.google.android.material.textview.MaterialTextView>
+    </androidx.appcompat.widget.AppCompatTextView>
 </layout>
